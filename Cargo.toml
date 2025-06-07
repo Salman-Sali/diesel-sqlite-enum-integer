@@ -1,0 +1,17 @@
+[package]
+name = "diesel-sqlite-enum-integer"
+version = "0.1.0"
+edition = "2024"
+description = "This proc macro attribute will allow you to store the enum as integer."
+homepage = "https://github.com/Salman-Sali/diesel-sqlite-enum-integer"
+readme = "readme.md"
+license = "MIT"
+keywords = ["diesel", "sqlite", "enum", "integer"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.92"
+quote = "1.0.37"
+syn = "2.0.89"
