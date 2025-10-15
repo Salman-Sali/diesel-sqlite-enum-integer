@@ -34,7 +34,7 @@ pub fn enum_to_diesel_integer(_args: TokenStream, input: TokenStream) -> TokenSt
 
     return quote!{
         #[repr(i32)]
-        #[derive(Debug, PartialEq, diesel::FromSqlRow, diesel::AsExpression, Eq, Clone)]
+        #[derive(diesel::FromSqlRow, diesel::AsExpression)]
         #[diesel(sql_type = diesel::sql_types::Integer)]
         #input
 
